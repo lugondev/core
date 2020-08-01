@@ -5,5 +5,5 @@
       "port": 4101
     }
   ],
-  "sources": []
+  "sources": ["https://raw.githubusercontent.com/lugondev/peers/master/mainnet.json"]
 }
