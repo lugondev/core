@@ -1,0 +1,18 @@
+{
+  "name": "mainnet",
+  "messagePrefix": "Lugon message:\n",
+  "bip32": {
+    "public": 46090600,
+    "private": 46089520
+  },
+  "pubKeyHash": 48,
+  "nethash": "d432f243065c2b1034e4a3258e8a1e04aaed0a4fd342779bdada098ff2c279e8",
+  "wif": 217,
+  "slip44": 111,
+  "aip20": 0,
+  "client": {
+    "token": "Lugon",
+    "symbol": "LUG",
+    "explorer": "http://128.199.124.24:4200"
+  }
+}
