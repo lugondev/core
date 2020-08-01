@@ -207,20 +207,42 @@ fi
 
 success "Installed system updates!"
 
-heading "Installing ARK Core..."
+heading "Installing Core..."
 
-while ! yarn global add @arkecosystem/core ; do
-    read -p "Installing ARK Core failed, do you want to retry? [y/N]: " choice
-    if [[ ! "$choice" =~ ^(yes|y|Y) ]] ; then
-        exit 1
-    fi
+shopt -s expand_aliases
+alias qlug="$HOME/qlug-core/packages/core/bin/run"
+echo 'alias gul="$HOME/qlug-core/packages/core/bin/run"' >> ~/.bashrc
+
+rm -rf "$HOME/qlug-core"
+git clone "https://github.com/lugondev/core" "$HOME/qlug-core" || FAILED="Y"
+if [ "$FAILED" == "Y" ]; then
+    echo "Failed to fetch core repo with origin 'https://github.com/lugondev/core'"
+
+    exit 1
+fi
+
+cd "$HOME/qlug-core"
+HAS_REMOTE=$(git branch -a | fgrep -o "remotes/origin/develop")
+if [ ! -z "$HAS_REMOTE" ]; then
+    git checkout develop
+fi
+
+YARN_SETUP="N"
+while [ "$YARN_SETUP" == "N" ]; do
+  YARN_SETUP="Y"
+  rm -rf "$HOME/.cache/yarn"
+  yarn setup || YARN_SETUP="N"
 done
+rm -rf "$HOME/.config/@gul"
+rm -rf "$HOME/.config/@qlug-blockchain"
+rm -rf "$HOME/.config/gul-core"
+
 
 echo 'export PATH=$(yarn global bin):$PATH' >> ~/.bashrc
 export PATH=$(yarn global bin):$PATH
 lugon config:publish
 
-success "Installed ARK Core!"
+success "Installed Core!"
 
 readNonempty() {
     prompt=${1}
