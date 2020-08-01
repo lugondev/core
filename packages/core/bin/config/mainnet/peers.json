@@ -1,9 +1,9 @@
 {
-    "list": [
-        {
-            "ip": "127.0.0.1",
-            "port": 4101
-        }
-    ],
-    "sources": []
+  "list": [
+    {
+      "ip": "128.199.99.101",
+      "port": 4101
+    }
+  ],
+  "sources": ["https://raw.githubusercontent.com/lugondev/peers/master/mainnet.json"]
 }
