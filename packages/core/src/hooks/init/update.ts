@@ -18,7 +18,7 @@ export const init: Hook<"init"> = async function({ id, config }) {
         this.warn(
             `${state.name} update available from ${Chalk.greenBright(state.currentVersion)} to ${Chalk.greenBright(
                 state.updateVersion,
-            )}. Review the latest release and run "lugon update" once you wish to update.`,
+            )}. Review the latest release and run "qlug update" once you wish to update.`,
         );
 
         const branch: Record<string, string> = {

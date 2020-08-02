@@ -7,7 +7,7 @@ export class RestartCommand extends AbstractRestartCommand {
 
     public static examples: string[] = [
         `Restart the forger
-$ lugon forger:restart
+$ qlug forger:restart
 `,
     ];
 

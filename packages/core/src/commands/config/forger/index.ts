@@ -10,10 +10,10 @@ export class ForgerCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Configure a delegate using an encrypted BIP38
-$ lugon config:forger --method=bip38
+$ qlug config:forger --method=bip38
 `,
         `Configure a delegate using a BIP39 passphrase
-$ lugon config:forger --method=bip39
+$ qlug config:forger --method=bip39
 `,
     ];
 

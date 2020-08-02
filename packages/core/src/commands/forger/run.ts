@@ -10,10 +10,10 @@ export class RunCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Run a forger with a bip39 passphrase
-$ lugon forger:run --bip39="..."
+$ qlug forger:run --bip39="..."
 `,
         `Run a forger with an encrypted bip38
-$ lugon forger:run --bip38="..." --password="..."
+$ qlug forger:run --bip38="..." --password="..."
 `,
     ];
 

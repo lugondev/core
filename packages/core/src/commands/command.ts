@@ -189,7 +189,7 @@ export abstract class BaseCommand extends Command {
 
                 if (!folders || folders.length === 0) {
                     this.error(
-                        'We were unable to detect any configuration. Please run "lugon config:publish" and try again.',
+                        'We were unable to detect any configuration. Please run "qlug config:publish" and try again.',
                     );
                 }
 
@@ -222,7 +222,7 @@ export abstract class BaseCommand extends Command {
                 }
             } catch (error) {
                 this.error(
-                    'We were unable to detect any configuration. Please run "lugon config:publish" and try again.',
+                    'We were unable to detect any configuration. Please run "qlug config:publish" and try again.',
                 );
             }
         }

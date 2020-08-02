@@ -10,7 +10,7 @@ export class PublishCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Publish the configuration for the mainnet network
-$ lugon config:publish --network=mainnet
+$ qlug config:publish --network=mainnet
 `,
     ];
 
@@ -66,7 +66,7 @@ $ lugon config:publish --network=mainnet
         this.addTask("Prepare directories", async () => {
             if (fs.existsSync(coreConfigDest)) {
                 this.error(
-                    `${coreConfigDest} already exists. Please run "lugon config:reset" if you wish to reset your configuration.`,
+                    `${coreConfigDest} already exists. Please run "qlug config:reset" if you wish to reset your configuration.`,
                 );
             }
 

@@ -214,9 +214,9 @@ alias qlug="$HOME/qlug-core/packages/core/bin/run"
 echo 'alias gul="$HOME/qlug-core/packages/core/bin/run"' >> ~/.bashrc
 
 rm -rf "$HOME/qlug-core"
-git clone "https://github.com/lugondev/core" "$HOME/qlug-core" || FAILED="Y"
+git clone "https://github.com/qlugdev/core" "$HOME/qlug-core" || FAILED="Y"
 if [ "$FAILED" == "Y" ]; then
-    echo "Failed to fetch core repo with origin 'https://github.com/lugondev/core'"
+    echo "Failed to fetch core repo with origin 'https://github.com/qlugdev/core'"
 
     exit 1
 fi
@@ -240,7 +240,7 @@ rm -rf "$HOME/.config/gul-core"
 
 echo 'export PATH=$(yarn global bin):$PATH' >> ~/.bashrc
 export PATH=$(yarn global bin):$PATH
-lugon config:publish
+qlug config:publish
 
 success "Installed Core!"
 
@@ -269,9 +269,9 @@ if [[ "$choice" =~ ^(yes|y|Y) ]]; then
         read -p "Proceed? [y/N]: " choice
     done
 
-    lugon env:set CORE_DB_USERNAME "${databaseUsername}"
-    lugon env:set CORE_DB_PASSWORD "${databasePassword}"
-    lugon env:set CORE_DB_DATABASE "${databaseName}"
+    qlug env:set CORE_DB_USERNAME "${databaseUsername}"
+    qlug env:set CORE_DB_PASSWORD "${databasePassword}"
+    qlug env:set CORE_DB_DATABASE "${databaseName}"
 
     userExists=$(sudo -i -u postgres psql -tAc "SELECT 1 FROM pg_user WHERE usename = '${databaseUsername}'")
     databaseExists=$(sudo -i -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname = '${databaseName}'")

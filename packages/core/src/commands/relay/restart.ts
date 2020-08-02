@@ -7,7 +7,7 @@ export class RestartCommand extends AbstractRestartCommand {
 
     public static examples: string[] = [
         `Restart the relay
-$ lugon relay:restart
+$ qlug relay:restart
 `,
     ];
 

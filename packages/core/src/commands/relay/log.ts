@@ -6,7 +6,7 @@ import { BaseCommand } from "../command";
 export class LogCommand extends AbstractLogCommand {
     public static description: string = "Show the relay log";
 
-    public static examples: string[] = [`$ lugon relay:log`];
+    public static examples: string[] = [`$ qlug relay:log`];
 
     public static flags: CommandFlags = {
         ...BaseCommand.flagsNetwork,
