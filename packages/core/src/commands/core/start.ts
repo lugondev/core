@@ -8,25 +8,25 @@ export class StartCommand extends AbstractStartCommand {
 
     public static examples: string[] = [
         `Run core with a daemon
-$ lugon core:start
+$ qlug core:start
 `,
         `Run core as genesis
-$ lugon core:start --networkStart
+$ qlug core:start --networkStart
 `,
         `Disable any discovery by other peers
-$ lugon core:start --disableDiscovery
+$ qlug core:start --disableDiscovery
 `,
         `Skip the initial discovery
-$ lugon core:start --skipDiscovery
+$ qlug core:start --skipDiscovery
 `,
         `Ignore the minimum network reach
-$ lugon core:start --ignoreMinimumNetworkReach
+$ qlug core:start --ignoreMinimumNetworkReach
 `,
         `Start a seed
-$ lugon core:start --launchMode=seed
+$ qlug core:start --launchMode=seed
 `,
         `Run core without a daemon
-$ lugon core:start --no-daemon
+$ qlug core:start --no-daemon
 `,
     ];
 

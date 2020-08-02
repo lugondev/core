@@ -7,7 +7,7 @@ export class SetCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Set the log level
-$ lugon env:set CORE_LOG_LEVEL info
+$ qlug env:set CORE_LOG_LEVEL info
 `,
     ];
 

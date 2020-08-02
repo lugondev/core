@@ -5,7 +5,7 @@ import { BaseCommand } from "../command";
 export class StatusCommand extends AbstractStatusCommand {
     public static description: string = "Show the core status";
 
-    public static examples: string[] = [`$ lugon core:status`];
+    public static examples: string[] = [`$ qlug core:status`];
 
     public static flags: CommandFlags = {
         ...BaseCommand.flagsNetwork,

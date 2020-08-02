@@ -10,22 +10,22 @@ export class RunCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Run core
-$ lugon core:run
+$ qlug core:run
 `,
         `Run core as genesis
-$ lugon core:run --networkStart
+$ qlug core:run --networkStart
 `,
         `Disable any discovery by other peers
-$ lugon core:run --disableDiscovery
+$ qlug core:run --disableDiscovery
 `,
         `Skip the initial discovery
-$ lugon core:run --skipDiscovery
+$ qlug core:run --skipDiscovery
 `,
         `Ignore the minimum network reach
-$ lugon core:run --ignoreMinimumNetworkReach
+$ qlug core:run --ignoreMinimumNetworkReach
 `,
         `Start a seed
-$ lugon core:run --launchMode=seed
+$ qlug core:run --launchMode=seed
 `,
     ];
 

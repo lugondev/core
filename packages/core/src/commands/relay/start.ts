@@ -8,25 +8,25 @@ export class StartCommand extends AbstractStartCommand {
 
     public static examples: string[] = [
         `Run a relay with a pm2 daemon
-$ lugon relay:start --network=mainnet
+$ qlug relay:start --network=mainnet
 `,
         `Run a genesis relay
-$ lugon relay:start --networkStart
+$ qlug relay:start --networkStart
 `,
         `Disable any discovery by other peers
-$ lugon relay:start --disableDiscovery
+$ qlug relay:start --disableDiscovery
 `,
         `Skip the initial discovery
-$ lugon relay:start --skipDiscovery
+$ qlug relay:start --skipDiscovery
 `,
         `Ignore the minimum network reach
-$ lugon relay:start --ignoreMinimumNetworkReach
+$ qlug relay:start --ignoreMinimumNetworkReach
 `,
         `Start a seed
-$ lugon relay:start --launchMode=seed
+$ qlug relay:start --launchMode=seed
 `,
         `Run a relay without a daemon
-$ lugon relay:start --no-daemon
+$ qlug relay:start --no-daemon
 `,
     ];
 

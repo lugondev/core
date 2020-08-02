@@ -13,7 +13,7 @@ export class TopCommand extends BaseCommand {
 
     public static examples: string[] = [
         `List all core daemons
-$ lugon top
+$ qlug top
 `,
     ];
 

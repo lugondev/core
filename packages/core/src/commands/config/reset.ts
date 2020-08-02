@@ -9,7 +9,7 @@ export class ResetCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Reset the configuration for the mainnet network
-$ lugon config:reset --network=mainnet
+$ qlug config:reset --network=mainnet
 `,
     ];
 

@@ -6,7 +6,7 @@ import { BaseCommand } from "../command";
 export class LogCommand extends AbstractLogCommand {
     public static description: string = "Show the core log";
 
-    public static examples: string[] = [`$ lugon core:log`];
+    public static examples: string[] = [`$ qlug core:log`];
 
     public static flags: CommandFlags = {
         ...BaseCommand.flagsNetwork,

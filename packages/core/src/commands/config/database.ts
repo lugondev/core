@@ -10,19 +10,19 @@ export class DatabaseCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Set the database host
-$ lugon config:database --host=localhost
+$ qlug config:database --host=localhost
 `,
         `Set the database port
-$ lugon config:database --port=5432
+$ qlug config:database --port=5432
 `,
         `Set the name of the database user
-$ lugon config:database --username=ark
+$ qlug config:database --username=ark
 `,
         `Set the database name
-$ lugon config:database --database=ark_mainnet
+$ qlug config:database --database=ark_mainnet
 `,
         `Set the database password
-$ lugon config:database --password=password
+$ qlug config:database --password=password
 `,
     ];
 

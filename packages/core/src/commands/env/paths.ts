@@ -8,7 +8,7 @@ export class PathsCommand extends BaseCommand {
 
     public static examples: string[] = [
         `List all environment paths
-$ lugon env:paths
+$ qlug env:paths
 `,
     ];
 

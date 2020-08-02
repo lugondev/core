@@ -8,7 +8,7 @@ export class GetCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Get the log level
-$ lugon env:get CORE_LOG_LEVEL
+$ qlug env:get CORE_LOG_LEVEL
 `,
     ];
 

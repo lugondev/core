@@ -8,10 +8,10 @@ export class StopCommand extends AbstractStopCommand {
 
     public static examples: string[] = [
         `Stop the core
-$ lugon core:stop
+$ qlug core:stop
 `,
         `Stop the core daemon
-$ lugon core:stop --daemon
+$ qlug core:stop --daemon
 `,
     ];
 

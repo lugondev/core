@@ -10,10 +10,10 @@ export class CommandLineInterfaceCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Set the token that should be used for configuration
-$ lugon config:cli --token=mine
+$ qlug config:cli --token=mine
 `,
         `Switch the npm registry channel
-$ lugon config:cli --channel=next
+$ qlug config:cli --channel=next
 `,
     ];
 

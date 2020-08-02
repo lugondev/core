@@ -10,7 +10,7 @@ export class ListCommand extends BaseCommand {
 
     public static examples: string[] = [
         `List all environment variables
-$ lugon env:list
+$ qlug env:list
 `,
     ];
 

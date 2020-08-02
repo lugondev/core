@@ -8,13 +8,13 @@ export class StartCommand extends AbstractStartCommand {
 
     public static examples: string[] = [
         `Run a forger with a bip39 passphrase
-$ lugon forger:start --bip39="..."
+$ qlug forger:start --bip39="..."
 `,
         `Run a forger with an encrypted bip38
-$ lugon forger:start --bip38="..." --password="..."
+$ qlug forger:start --bip38="..." --password="..."
 `,
         `Run a forger without a daemon
-$ lugon forger:start --no-daemon
+$ qlug forger:start --no-daemon
 `,
     ];
 

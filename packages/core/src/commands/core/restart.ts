@@ -7,7 +7,7 @@ export class RestartCommand extends AbstractRestartCommand {
 
     public static examples: string[] = [
         `Restart the core
-$ lugon core:restart
+$ qlug core:restart
 `,
     ];
 
