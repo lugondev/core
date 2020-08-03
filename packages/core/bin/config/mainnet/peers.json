@@ -5,5 +5,5 @@
       "port": 4101
     }
   ],
-  "sources": ["https://raw.githubusercontent.com/qlugdev/peers/master/mainnet.json"]
+  "sources": ["https://raw.githubusercontent.com/lugondev/peers/master/mainnet.json"]
 }

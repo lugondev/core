@@ -214,9 +214,9 @@ alias qlug="$HOME/qlug-core/packages/core/bin/run"
 echo 'alias gul="$HOME/qlug-core/packages/core/bin/run"' >> ~/.bashrc
 
 rm -rf "$HOME/qlug-core"
-git clone "https://github.com/qlugdev/core" "$HOME/qlug-core" || FAILED="Y"
+git clone "https://github.com/lugondev/core" "$HOME/qlug-core" || FAILED="Y"
 if [ "$FAILED" == "Y" ]; then
-    echo "Failed to fetch core repo with origin 'https://github.com/qlugdev/core'"
+    echo "Failed to fetch core repo with origin 'https://github.com/lugondev/core'"
 
     exit 1
 fi
